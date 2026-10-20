@@ -1,0 +1,84 @@
+name: Publish MathAI Daily
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # GitHub Actions cron uses UTC. 22:17 UTC = 07:17 Asia/Seoul (next day).
+    # Schedule execution is best-effort and may be delayed by GitHub.
+    - cron: '17 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: mathai-pages
+  cancel-in-progress: false
+
+jobs:
+  test-update-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run offline pipeline tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Refresh public news feeds (scheduled or manual runs)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4o-mini
+          MAX_AI_ITEMS: '10'
+        run: python3 scripts/update_news.py --days 7
+
+      - name: Validate news archive
+        run: python3 scripts/check_data.py
+
+      - name: Commit refreshed archive
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/news.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh MathAI Daily news archive'
+            git push
+          else
+            echo 'No archive changes.'
+          fi
+
+      - name: Prepare website artifact
+        run: |
+          mkdir -p _site
+          cp index.html .nojekyll _site/
+          cp -R assets data _site/
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Print deployed URL
+        run: echo 'Deployed to ${{ steps.deployment.outputs.page_url }}'
