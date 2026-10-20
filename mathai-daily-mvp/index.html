@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a101c">
+  <meta name="description" content="MathAI Daily — 수학과 AI의 최신 연구, 증명, 모델, 논문을 한국어와 영어로 만나보세요. Daily intelligence at the intersection of mathematics and AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MathAI Daily — Where mathematics meets intelligence">
+  <meta property="og:description" content="An independently curated bilingual briefing on mathematics and AI research.">
+  <title>MathAI Daily — Mathematics meets intelligence</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-theme="dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="topline">
+    <div class="container topline-content">
+      <div class="topline-left"><span class="live-dot" aria-hidden="true"></span><span data-i18n="topline">THE DAILY SIGNAL FOR CURIOUS MINDS</span></div>
+      <div class="topline-right"><span class="topline-monogram">M∩AI</span><span id="topline-date">—</span><span class="topline-slash">/</span><span data-i18n="timezone">SEOUL TIME, UTC+9</span></div>
+    </div>
+  </div>
+  <div class="container">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="MathAI Daily homepage">
+        <span class="brand-mark" aria-hidden="true"><span>∑</span><small>✦</small></span>
+        <span class="brand-lockup"><strong>Math<span>AI</span><em>Daily</em></strong><small>RESEARCH, DECODED.</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#stories" data-i18n="nav_latest">Latest</a>
+        <a class="nav-link" href="#archive" data-i18n="nav_archive">Archive</a>
+        <a class="nav-link" href="#sources" data-i18n="nav_sources">Sources</a>
+        <a class="nav-link" href="#about" data-i18n="nav_about">About</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button id="lang-ko" class="language-btn selected" type="button" aria-pressed="true">KR</button>
+          <button id="lang-en" class="language-btn" type="button" aria-pressed="false">EN</button>
+        </div>
+        <button id="theme-toggle" class="icon-button theme-switch" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-star">✳</span><span data-i18n="hero_eyebrow">THE INTELLIGENCE BRIEFING</span><span class="eyebrow-line"></span><span>VOL. 001</span></div>
+          <h1 data-i18n-html="hero_title">수학의 다음 장면을<br>놓치지 않도록<span class="accent-dot">.</span></h1>
+          <p class="hero-desc" data-i18n="hero_description">새로운 증명부터 AI 연구의 돌파구까지. 넘쳐나는 정보 속에서 정말 중요한 변화만, 하나의 시야로.</p>
+          <div class="hero-actions">
+            <a href="#stories" class="primary-cta"><span data-i18n="explore">오늘의 리서치 보기</span><span aria-hidden="true">↗</span></a>
+            <a href="#about" class="secondary-cta"><span data-i18n="how_it_works">어떻게 만들었나요?</span><span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-metrics" aria-label="Publication metrics">
+            <div class="metric"><strong id="metric-stories">—</strong><span data-i18n="metric_stories">ARCHIVED STORIES</span></div>
+            <span class="metric-separator" aria-hidden="true"></span>
+            <div class="metric"><strong id="metric-sources">—</strong><span data-i18n="metric_sources">NEWS SOURCES</span></div>
+            <span class="metric-separator" aria-hidden="true"></span>
+            <div class="metric"><strong>2</strong><span data-i18n="metric_languages">LANGUAGES</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-grid"></div>
+          <svg class="visual-orbit" viewBox="0 0 540 495" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="curve" x1="73" y1="86" x2="472" y2="415" gradientUnits="userSpaceOnUse"><stop stop-color="#b4faeb"/><stop offset=".53" stop-color="#6d9cf6"/><stop offset="1" stop-color="#dbb0f8"/></linearGradient><radialGradient id="glow"><stop stop-color="#8cf9e6" stop-opacity=".18"/><stop offset="1" stop-color="#8cf9e6" stop-opacity="0"/></radialGradient></defs>
+            <circle cx="274" cy="248" r="202" fill="url(#glow)"/>
+            <circle cx="270" cy="248" r="174" stroke="#516477" stroke-opacity=".32"/>
+            <circle cx="270" cy="248" r="127" stroke="#516477" stroke-opacity=".24" stroke-dasharray="3 7"/>
+            <circle cx="270" cy="248" r="79" stroke="#516477" stroke-opacity=".22"/>
+            <ellipse cx="270" cy="248" rx="215" ry="77" transform="rotate(-29 270 248)" stroke="url(#curve)" stroke-opacity=".7" stroke-width="1.4"/>
+            <ellipse cx="270" cy="248" rx="215" ry="77" transform="rotate(59 270 248)" stroke="url(#curve)" stroke-opacity=".47" stroke-width="1.2"/>
+            <path d="M70 352C125 322 162 105 269 242C361 358 401 149 477 118" stroke="url(#curve)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M81 153C163 188 160 377 267 251C365 137 400 335 461 362" stroke="#8cebdc" stroke-opacity=".35" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="5 8"/>
+            <circle cx="269" cy="242" r="10" fill="#91f2dc"/><circle cx="269" cy="242" r="17" stroke="#91f2dc" stroke-opacity=".42"/>
+            <circle cx="174" cy="311" r="5" fill="#c5bcff"/><circle cx="387" cy="184" r="6" fill="#a0d9fe"/><circle cx="423" cy="277" r="4" fill="#9dedce"/>
+            <path d="M270 57v32M270 405v32M61 248h32M447 248h32" stroke="#7b92aa" stroke-opacity=".6"/>
+            <circle cx="270" cy="248" r="3" fill="#ecfffb"/>
+          </svg>
+          <div class="visual-label label-top"><small>FIELD NOTE 01</small><strong>∫ f(x) dx</strong></div>
+          <div class="visual-label label-right"><small>CONVERGENCE</small><strong>∞ <span>→</span> 01</strong></div>
+          <div class="visual-label label-bottom"><span class="tiny-signal"></span><span>HUMAN CURIOSITY × MACHINE REASONING</span></div>
+          <span class="visual-cross cross-a">+</span><span class="visual-cross cross-b">+</span>
+        </div>
+      </div>
+      <div class="hero-bottom-rule"><div class="container"><span>01 / THE SIGNAL</span><span class="rule-line"></span><span>SCROLL TO DISCOVER ↓</span></div></div>
+    </section>
+
+    <div class="container main-content">
+      <section class="edition-section" id="stories">
+        <div class="section-header">
+          <div><div class="section-index" data-i18n="section_one">SECTION 01 — THE DAILY BRIEF</div><h2 data-i18n-html="daily_brief">오늘의 시그널<span class="heading-dot">.</span></h2></div>
+          <div class="edition-control"><span data-i18n="edition_label">EDITION</span><select id="edition-select" aria-label="Edition date"><option value="all">All editions</option></select></div>
+        </div>
+        <div class="edition-strip">
+          <div class="edition-indicator"><span class="pulse-bar"></span><span id="edition-status" data-i18n="edition_loading">데이터 불러오는 중...</span></div>
+          <div class="edition-meta"><span id="last-updated">—</span><span class="small-dot">·</span><span data-i18n="time_kst">KST</span></div>
+        </div>
+        <div class="brief-layout">
+          <div class="brief-primary" id="featured-container" aria-live="polite"></div>
+          <aside class="brief-aside">
+            <div class="side-panel digest-panel">
+              <div class="side-panel-kicker"><span>✳</span><span data-i18n="daily_pulse">DAILY PULSE</span></div>
+              <h3 id="pulse-heading">—</h3>
+              <p id="pulse-description">—</p>
+              <div class="pulse-tags" id="pulse-tags"></div>
+            </div>
+            <div class="side-panel note-panel">
+              <div class="side-panel-kicker"><span class="mini-square"></span><span data-i18n="editorial_note">EDITORIAL NOTE</span></div>
+              <p data-i18n="editorial_note_text">새로운 소식과 오래된 성과를 구분합니다. 원문 확인을 권장하며, AI가 생성한 요약은 독립적인 사실 검증을 대체하지 않습니다.</p>
+              <a href="#about" class="text-arrow"><span data-i18n="methodology_link">편집 원칙 살펴보기</span> ↗</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="feed-section" id="archive">
+        <div class="section-header feed-header">
+          <div><div class="section-index" data-i18n="section_two">SECTION 02 — THE RESEARCH FEED</div><h2 data-i18n-html="research_feed">리서치 피드<span class="heading-dot">.</span></h2></div>
+          <div class="results-number"><strong id="results-count">0</strong><span data-i18n="results_label">STORIES FOUND</span></div>
+        </div>
+        <div class="feed-controls">
+          <div class="category-tabs" id="category-tabs" role="group" aria-label="Filter by topic"></div>
+          <div class="feed-tools">
+            <label class="searchbox">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg>
+              <input id="search-input" type="search" autocomplete="off" data-i18n-placeholder="search_placeholder" placeholder="키워드 검색" aria-label="Search stories">
+              <span class="search-hint">/</span>
+            </label>
+            <select id="sort-select" class="sort-select" aria-label="Sort stories"><option value="recent" data-i18n="sort_recent">최신순</option><option value="important" data-i18n="sort_important">중요도순</option><option value="oldest" data-i18n="sort_oldest">오래된순</option></select>
+            <button id="saved-only" class="saved-control" type="button" aria-pressed="false" title="Show saved stories"><span aria-hidden="true">☆</span><span data-i18n="saved">저장됨</span></button>
+          </div>
+        </div>
+        <div class="stories-grid" id="stories-grid" aria-live="polite"><div class="loading-card"><span class="loading-icon">◌</span><span data-i18n="loading">기사 데이터를 불러오는 중입니다...</span></div></div>
+        <div class="feed-bottom" id="feed-bottom"></div>
+      </section>
+
+      <section class="source-section" id="sources">
+        <div class="section-header"><div><div class="section-index" data-i18n="section_three">SECTION 03 — OUR INPUTS</div><h2 data-i18n-html="trusted_sources">소식의 출발점<span class="heading-dot">.</span></h2></div></div>
+        <p class="section-lede" data-i18n="source_lede">수학 커뮤니티, 연구 아카이브, AI 연구소의 공개 RSS·Atom 피드를 기반으로 합니다.</p>
+        <div id="sources-list" class="sources-list"></div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-inner">
+          <div><div class="section-index" data-i18n="section_four">SECTION 04 — BEHIND THE BRIEF</div><h2 data-i18n-html="about_title">더 많은 정보가 아니라,<br>더 나은 맥락을.</h2></div>
+          <div class="about-copy"><p data-i18n="about_description">MathAI Daily는 공개된 원문 메타데이터를 수집하고, 출처를 남기며, 한국어·영어로 쉽게 탐색할 수 있도록 구성한 오픈소스 뉴스 MVP입니다.</p><div class="process-steps"><div><span>01</span><strong data-i18n="step_collect">수집 / Collect</strong><small data-i18n="step_collect_desc">공개 RSS와 arXiv Atom</small></div><div><span>02</span><strong data-i18n="step_curate">분류 / Curate</strong><small data-i18n="step_curate_desc">주제 분류와 중복 제거</small></div><div><span>03</span><strong data-i18n="step_publish">공개 / Publish</strong><small data-i18n="step_publish_desc">날짜별 아카이브</small></div></div><p class="disclaimer" data-i18n="disclaimer">주의: RSS 초록은 원문 전체가 아닙니다. AI 번역·요약이 활성화돼도 수학적 정확성과 논문의 검증 여부를 보장하지 않으며, 중요한 주장에는 반드시 원문과 후속 검증을 확인하세요.</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><a href="#top" class="footer-brand">Math<span>AI</span> Daily <span class="small-orbit">✳</span></a><p data-i18n="footer_tagline">Mathematics meets intelligence. Curiosity stays human.</p></div><div class="footer-right"><span data-i18n="footer_independent">INDEPENDENT RESEARCH SIGNAL</span><span>© <span id="copyright-year">2026</span> MATHAI DAILY</span><a href="#top" data-i18n="back_top">BACK TO TOP ↑</a></div></div></footer>
+
+  <dialog id="story-dialog" class="story-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><button class="dialog-close" id="dialog-close" type="button" aria-label="Close dialog">×</button><div id="dialog-body"></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

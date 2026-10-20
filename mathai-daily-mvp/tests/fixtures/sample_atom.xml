@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>arXiv Query Fixture</title>
+ <entry><id>http://arxiv.org/abs/2610.12345</id>
+ <updated>2026-10-17T12:00:00Z</updated><published>2026-10-17T11:45:00Z</published>
+ <title>Formal Proof Discovery with Neural Language Models</title>
+ <summary>New techniques for theorem proving with Lean and language models.</summary>
+ <link href="http://arxiv.org/abs/2610.12345" rel="alternate" type="text/html" />
+ </entry>
+</feed>

@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": null,
+  "demo": true,
+  "health": {
+    "ok": 0,
+    "failed": 0
+  },
+  "sources": [
+    {
+      "name": "Quanta Magazine",
+      "homepage": "https://www.quantamagazine.org/",
+      "feed": "https://www.quantamagazine.org/feed/",
+      "type": "rss",
+      "symbol": "Q"
+    },
+    {
+      "name": "Quanta Mathematics",
+      "homepage": "https://www.quantamagazine.org/mathematics/",
+      "feed": "https://www.quantamagazine.org/mathematics/feed/",
+      "type": "rss",
+      "symbol": "∑"
+    },
+    {
+      "name": "OpenAI",
+      "homepage": "https://openai.com/news/",
+      "feed": "https://openai.com/news/rss.xml",
+      "type": "rss",
+      "symbol": "◌"
+    },
+    {
+      "name": "Google DeepMind",
+      "homepage": "https://deepmind.google/blog/",
+      "feed": "https://deepmind.google/blog/rss.xml",
+      "type": "rss",
+      "symbol": "✳"
+    },
+    {
+      "name": "Google Research",
+      "homepage": "https://research.google/blog/",
+      "feed": "https://research.google/blog/rss/",
+      "type": "rss",
+      "symbol": "G"
+    },
+    {
+      "name": "Hugging Face",
+      "homepage": "https://huggingface.co/blog",
+      "feed": "https://huggingface.co/blog/feed.xml",
+      "type": "rss",
+      "symbol": "H"
+    },
+    {
+      "name": "arXiv",
+      "homepage": "https://arxiv.org/",
+      "feed": "https://export.arxiv.org/api/query",
+      "type": "atom",
+      "symbol": "α"
+    }
+  ],
+  "articles": [
+    {
+      "id": "912c74a65d82a0c8",
+      "publishedAt": "2026-10-16T12:00:00Z",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "kind": "article",
+      "category": "ai",
+      "score": 78,
+      "title": {
+        "ko": "AI 벤치마크를 과학으로 만드는 방법은?",
+        "en": "He Wants AI Benchmarking To Be a Science, Not a Dark Art"
+      },
+      "summary": {
+        "ko": "컴퓨터과학자 모리츠 하르트가 AI 벤치마크가 연구를 유도하고 성능을 과장할 수 있는 방식을 비판하며 더 정교한 평가 방법을 제안한다.",
+        "en": "Computer scientist Moritz Hardt examines how benchmarks shape AI research, sometimes producing misleading claims about model capabilities."
+      },
+      "impact": {
+        "ko": "수학적 추론 모델의 성능을 평가할 때도 단일 점수보다 검증 방식과 일반화 능력을 함께 살펴야 한다.",
+        "en": "Evaluating mathematical reasoning systems requires attention to test design and generalization, not only headline scores."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "409470f9c2e17b2d",
+      "publishedAt": "2026-10-12T12:00:00Z",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/is-attention-the-essence-of-intelligence-20261012/",
+      "kind": "article",
+      "category": "ai",
+      "score": 81,
+      "title": {
+        "ko": "어텐션은 지능의 본질일까?",
+        "en": "Is “Attention” the Essence of Intelligence?"
+      },
+      "summary": {
+        "ko": "트랜스포머의 핵심 메커니즘인 어텐션이 언어 모델의 성능을 가능하게 한 이유와 그 이론적 의미를 짚는다.",
+        "en": "A mathematical look at why attention became the central mechanism behind the transformer architecture and modern language models."
+      },
+      "impact": {
+        "ko": "어텐션은 현대 AI를 지탱하는 수학적 구조지만, 그 성공이 지능 전체를 설명하는지는 별개의 연구 문제다.",
+        "en": "Attention is mathematically central to modern AI, yet its effectiveness does not by itself settle what intelligence is."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "270d2009beef3a33",
+      "publishedAt": "2026-10-06T12:00:00Z",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "kind": "release",
+      "category": "mathai",
+      "score": 98,
+      "title": {
+        "ko": "OpenAI, AI가 도출한 수학 연구 결과와 Lean 형식화 공개",
+        "en": "Sharing AI Progress in Mathematics"
+      },
+      "summary": {
+        "ko": "OpenAI가 내부 모델로 생성한 수학 연구 결과를 공개하고, 일부 증명의 Lean 형식화와 연구 과정을 공유했다. 각 주장에 대한 수학계의 검토는 별도로 필요하다.",
+        "en": "OpenAI released mathematical research produced by an internal model, together with Lean formalizations of some proofs and process documentation. Independent community review remains important."
+      },
+      "impact": {
+        "ko": "AI가 제안한 결과, 기계적으로 검사 가능한 증명, 수학자가 이해하고 검토한 논증을 분리해 평가해야 한다는 점이 중요하다.",
+        "en": "The release highlights the need to distinguish AI-generated claims, machine-checkable formalizations, and independently understood mathematical arguments."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "b89ef215c061305d",
+      "publishedAt": "2026-09-28T12:00:00Z",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/mathematicians-harness-randomness-to-crack-a-55-year-old-conjecture-20260928/",
+      "kind": "article",
+      "category": "math",
+      "score": 76,
+      "title": {
+        "ko": "무작위성을 활용해 55년 된 조합론 추측 해결",
+        "en": "Mathematicians Harness Randomness To Crack a 55-Year-Old Conjecture"
+      },
+      "summary": {
+        "ko": "젊은 수학자들이 확률적 아이디어를 활용해 오랫동안 미해결이었던 조합론 문제를 해결한 연구를 소개한다.",
+        "en": "A group of mathematicians used probabilistic ideas to settle a long-standing combinatorial conjecture."
+      },
+      "impact": {
+        "ko": "순수수학의 새로운 성과도 함께 다뤄 AI 기술 뉴스에 치우치지 않도록 한다.",
+        "en": "The feed covers standalone advances in mathematics as well as AI-focused research."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "8c4c7fc4c8be0489",
+      "publishedAt": "2026-09-10T12:00:00Z",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/the-four-color-theorem-gets-a-rare-new-proof-20260910/",
+      "kind": "article",
+      "category": "math",
+      "score": 80,
+      "title": {
+        "ko": "4색 정리에 새로운 증명 등장",
+        "en": "The Four-Color Theorem Gets a Rare New Proof"
+      },
+      "summary": {
+        "ko": "오랫동안 컴퓨터 보조 증명으로 알려진 4색 정리를 새로운 관점에서 바라보는 연구와 그래프 구조에 관한 통찰을 소개한다.",
+        "en": "Researchers revisited the four-color theorem and developed a new proof that offers insights into the structure of graphs."
+      },
+      "impact": {
+        "ko": "같은 정리라도 새로운 증명은 기존 기법의 한계를 이해하고 다른 문제로 확장할 수 있는 가능성을 준다.",
+        "en": "New proofs of established theorems can yield fresh techniques and help mathematicians understand why results hold."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "59c2f42b371b062e",
+      "publishedAt": "2026-08-01T12:00:00Z",
+      "source": "OpenAI",
+      "url": "https://openai.com/ko-KR/index/ten-advances-in-mathematics/",
+      "kind": "release",
+      "category": "proof",
+      "score": 89,
+      "title": {
+        "ko": "수학·이론컴퓨터과학의 10가지 새 성과 공개",
+        "en": "Ten Advances in Mathematics and Theoretical Computer Science"
+      },
+      "summary": {
+        "ko": "OpenAI가 미해결 문제의 해결이나 진전을 목표로 수행한 수학·이론컴퓨터과학 연구 10건을 소개하고 형식화 작업을 공개했다.",
+        "en": "OpenAI reported ten mathematical and theoretical-computer-science research advances and described how proof formalizations were produced."
+      },
+      "impact": {
+        "ko": "증명의 타당성, 기여 표기, 재현 가능성은 AI 수학 연구에서 특별히 중요한 평가 기준이다.",
+        "en": "Proof validity, attribution, and reproducibility are central to assessing AI contributions in mathematical research."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "99b1170ac1453321",
+      "publishedAt": "2026-05-07T12:00:00Z",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "kind": "release",
+      "category": "mathai",
+      "score": 87,
+      "title": {
+        "ko": "AlphaEvolve, 수학과 과학의 알고리즘 발견으로 확장",
+        "en": "AlphaEvolve: How Our Gemini-Powered Coding Agent Is Scaling Impact Across Fields"
+      },
+      "summary": {
+        "ko": "DeepMind가 알고리즘 탐색 시스템 AlphaEvolve의 활용 사례를 소개했다. 수학자와의 협업, 조합론·최적화 문제 등으로 적용이 확대되고 있다.",
+        "en": "DeepMind reported a broader set of applications of AlphaEvolve, including collaborations with mathematicians and progress on optimization problems."
+      },
+      "impact": {
+        "ko": "자동 평가가 가능한 분야에서 AI가 가설을 만들고 실험으로 걸러내는 연구 방식의 사례다.",
+        "en": "The work illustrates a discovery loop in which AI proposes candidate methods that can be tested with automated evaluators."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "845cfd8afc1734d9",
+      "publishedAt": "2026-02-20T12:00:00Z",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/first-proof-submissions/",
+      "kind": "release",
+      "category": "proof",
+      "score": 88,
+      "title": {
+        "ko": "연구급 수학 증명 생성 평가: First Proof 도전",
+        "en": "Our First Proof Submissions"
+      },
+      "summary": {
+        "ko": "OpenAI가 연구급 수학 문제 10개의 증명 시도를 공유했다. 전문가 검토 결과 일부 시도는 유망하지만, 적어도 한 시도는 틀렸다고 수정했다.",
+        "en": "OpenAI shared proof attempts for ten research-level mathematics problems, explicitly revising its assessment after expert scrutiny found an error in at least one attempt."
+      },
+      "impact": {
+        "ko": "어려운 수학 문제에서 그럴듯한 설명과 실제로 검증된 증명을 구별해야 할 필요성을 보여 준다.",
+        "en": "It underscores the gap between plausible-looking long proofs and mathematical arguments that survive rigorous expert review."
+      },
+      "languageQuality": "editorial"
+    },
+    {
+      "id": "4487619628e14410",
+      "publishedAt": "2024-07-25T12:00:00Z",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/",
+      "kind": "release",
+      "category": "proof",
+      "score": 85,
+      "title": {
+        "ko": "AlphaProof·AlphaGeometry 2, IMO 은메달 수준 달성",
+        "en": "AI Achieves Silver-Medal Standard at the IMO"
+      },
+      "summary": {
+        "ko": "AlphaProof와 AlphaGeometry 2가 2024년 국제수학올림피아드 6문제 중 4문제를 해결해 은메달 수준을 보였다.",
+        "en": "AlphaProof and AlphaGeometry 2 solved four of the six 2024 International Mathematical Olympiad problems, reaching a silver-medal-equivalent result."
+      },
+      "impact": {
+        "ko": "Lean을 활용한 형식적 추론과 신경-기호 기하학 시스템이 수학 문제 해결에서 결합될 수 있음을 보여 준 이정표다.",
+        "en": "A landmark demonstration of formal reasoning with Lean and a neuro-symbolic geometry solver on challenging mathematical tasks."
+      },
+      "languageQuality": "editorial"
+    }
+  ]
+}

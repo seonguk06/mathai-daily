@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Quanta Magazine",
+    "homepage": "https://www.quantamagazine.org/",
+    "feed": "https://www.quantamagazine.org/feed/",
+    "type": "rss",
+    "symbol": "Q"
+  },
+  {
+    "name": "Quanta Mathematics",
+    "homepage": "https://www.quantamagazine.org/mathematics/",
+    "feed": "https://www.quantamagazine.org/mathematics/feed/",
+    "type": "rss",
+    "symbol": "∑"
+  },
+  {
+    "name": "OpenAI",
+    "homepage": "https://openai.com/news/",
+    "feed": "https://openai.com/news/rss.xml",
+    "type": "rss",
+    "symbol": "◌"
+  },
+  {
+    "name": "Google DeepMind",
+    "homepage": "https://deepmind.google/blog/",
+    "feed": "https://deepmind.google/blog/rss.xml",
+    "type": "rss",
+    "symbol": "✳"
+  },
+  {
+    "name": "Google Research",
+    "homepage": "https://research.google/blog/",
+    "feed": "https://research.google/blog/rss/",
+    "type": "rss",
+    "symbol": "G"
+  },
+  {
+    "name": "Hugging Face",
+    "homepage": "https://huggingface.co/blog",
+    "feed": "https://huggingface.co/blog/feed.xml",
+    "type": "rss",
+    "symbol": "H"
+  },
+  {
+    "name": "arXiv",
+    "homepage": "https://arxiv.org/",
+    "feed": "https://export.arxiv.org/api/query",
+    "type": "atom",
+    "symbol": "α"
+  }
+]
